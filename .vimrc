@@ -26,7 +26,6 @@ set ffs=unix,mac,dos " Use Unix as the standard file type
 set softtabstop=2 " 1 tab = 2 spaces
 set shiftwidth=2 " 1 tab = 2 spaces
 set expandtab " spaces instead of tabs
-set smarttab
 set autoindent
 set smartindent
 
