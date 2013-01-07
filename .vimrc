@@ -1,4 +1,4 @@
-call pathogen#infect()
+execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
@@ -29,7 +29,7 @@ set expandtab " spaces instead of tabs
 set autoindent
 
 " appearance
-colorscheme torte " overwritten for macvim
+colorscheme desert " overwritten for macvim
 set number " show line number
 
 " shortcuts
