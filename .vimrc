@@ -38,4 +38,4 @@ map <F2> :NERDTreeToggle<CR>
 
 " plugins
 let NERDTreeShowHidden=1 " Nerdtree show hidden files by default
-let NERDTreeIgnore = ['\.swp$', '\.DS_Store$']
+let NERDTreeIgnore = ['\.swp$', '\.swp$', '\.DS_Store$']
