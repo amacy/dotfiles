@@ -1,0 +1,7 @@
+[user]
+	name = Aaron Macy
+	email = aaronmacy@gmail.com
+[core]
+	editor = mvim -f
+[alias]
+	co = checkout

@@ -27,7 +27,6 @@ set softtabstop=2 " 1 tab = 2 spaces
 set shiftwidth=2 " 1 tab = 2 spaces
 set expandtab " spaces instead of tabs
 set autoindent
-set smartindent
 
 " appearance
 colorscheme torte " overwritten for macvim
