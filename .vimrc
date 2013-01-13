@@ -29,6 +29,7 @@ set expandtab " spaces instead of tabs
 set autoindent
 
 " appearance
+"set t_Co=256 " 256 colors (NOT SUPPORTED IN 10.6.8)
 colorscheme desert " overwritten for macvim
 set number " show line number
 
