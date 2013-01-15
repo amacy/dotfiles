@@ -14,6 +14,10 @@ parse_git_branch() {
 # Terminal prompt customization
 export PS1="\[\e[37;40m\]\w/\[\e[35;40m\]\$(parse_git_branch)\[\e[37;40m\] $ \[\e[0m\]"
 
+# SML for UW course
+
+export PATH="$PATH:/usr/local/smlnj-110.75/bin"
+
 # Custom Terminal Commands #
 # Rails
 
