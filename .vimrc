@@ -16,7 +16,7 @@ set ignorecase " ignore case when searching...
 set smartcase	" ...unless uppercase (only works when ignorecase on)
 
 set spell " spellchecker
-set history=1000 "how many lines Vim has to remember
+set history=1000 " how many lines Vim has to remember
 set encoding=utf-8 " encoding
 set ffs=unix,mac,dos " Use Unix as the standard file type
 
@@ -28,7 +28,7 @@ set expandtab " spaces instead of tabs
 set autoindent
 
 " appearance
-syntax on
+syntax on " syntax highlighting
 "set t_Co=256 " 256 colors (NOT SUPPORTED IN 10.6.8)
 colorscheme desert " overwritten for macvim
 set number " show line number
@@ -36,6 +36,13 @@ set number " show line number
 " shortcuts
 map <F2> :NERDTreeToggle<CR>
 map <F3> :CommandT<CR>
+inoremap kj <Esc>
+" Stay the hell out of insert mode
+" http://cloudhead.io/2010/04/24/staying-the-hell-out-of-insert-mode/
+inoremap <Left>  <NOP>
+inoremap <Right> <NOP>
+inoremap <Up>    <NOP>
+inoremap <Down>  <NOP>
 
 " NERDTree
 let NERDTreeShowHidden=1 " Nerdtree show hidden files by default
