@@ -1,5 +1,3 @@
-execute pathogen#infect()
-
 " from http://vim.wikia.com/wiki/Example_vimrc
 set nocompatible 
 set hidden
@@ -34,8 +32,6 @@ colorscheme desert " overwritten for macvim
 set number " show line number
 
 " shortcuts
-map <F2> :NERDTreeToggle<CR>
-map <F3> :CommandT<CR>
 inoremap kj <Esc>
 " Stay the hell out of insert mode
 " http://cloudhead.io/2010/04/24/staying-the-hell-out-of-insert-mode/
@@ -43,10 +39,3 @@ inoremap <Left>  <NOP>
 inoremap <Right> <NOP>
 inoremap <Up>    <NOP>
 inoremap <Down>  <NOP>
-
-" NERDTree
-let NERDTreeShowHidden=1 " Nerdtree show hidden files by default
-let NERDTreeIgnore = ['\.swp$', '\.swo$', '\.DS_Store$']
-
-" Command-T
-set wildignore+=*.o,*.obj,.git,*.swo,*.swp,*.mp3,*.m4a,*.zip,*.rar,*.doc,*.docx,*.jpg,*.gif,*.pdf,*.torrent,Applications,Documents/creative,Documents/personal-misc,Documents/profession-misc/,Documents/transcriptions,*.xls,*.vcf,*.ai,*.indd,*.psd,*.tif,*.tiff,*.jpeg,*.ini,Downloads,Movies,Pictures,Dropbox,Music,Library,*.DS_Store,*.initalized
