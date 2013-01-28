@@ -18,3 +18,6 @@ let NERDTreeIgnore = ['\.swp$', '\.swo$', '\.DS_Store$']
 set wildignore+=*.o,*.obj,.git,*.swo,*.swp,*.mp3,*.m4a,*.zip,*.rar,*.doc,*.docx,*.jpg,*.gif,*.pdf,*.torrent,Applications,Documents/creative,Documents/personal-misc,Documents/profession-misc/,Documents/transcriptions,*.xls,*.vcf,*.ai,*.indd,*.psd,*.tif,*.tiff,*.jpeg,*.ini,Downloads,Movies,Pictures,Dropbox,Music,Library,*.DS_Store,*.initalized
 
 " autocmd vimenter * NERDTree " Automatically start NERD Tree on load
+
+" improve formatting in markdown/text files
+autocmd FileType liquid,markdown,text,txt setlocal tw=78 linebreak nolist
