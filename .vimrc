@@ -13,7 +13,7 @@ set mouse=a
 set incsearch " incremental search mode
 set hlsearch " highlight search things
 set ignorecase " ignore case when searching...
-set smartcase	" ...unless uppercase (only works when ignorecase on)
+set smartcase  " ...unless uppercase (only works when ignorecase on)
 
 set spell " spellchecker
 set history=1000 " how many lines Vim has to remember
@@ -29,18 +29,18 @@ set autoindent
 
 " appearance
 syntax on " syntax highlighting
-"set t_Co=256 " 256 colors (NOT SUPPORTED IN 10.6.8)
-colorscheme desert " overwritten for macvim
+set t_Co=256 " 256 colors (NOT SUPPORTED IN 10.6.8)
+colorscheme ir_black 
 set number " show line number
 
 " shortcuts
 inoremap kj <Esc>
 " Stay the hell out of insert mode
 " http://cloudhead.io/2010/04/24/staying-the-hell-out-of-insert-mode/
-inoremap <Left>  <NOP>
-inoremap <Right> <NOP>
-inoremap <Up>    <NOP>
-inoremap <Down>  <NOP>
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
 " plugins
 map <F2> :NERDTreeToggle<CR>
 map <F3> :CommandT<CR>
@@ -48,6 +48,11 @@ map <F3> :CommandT<CR>
 " NERDTree
 let NERDTreeShowHidden=1 " Nerdtree show hidden files by default
 let NERDTreeIgnore = ['\.swp$', '\.swo$', '\.DS_Store$']
+nnoremap <leader>n :NERDTree /Users/amacy/documents/doa<CR>
 
 " Command-T
-set wildignore+=*.o,*.obj,.git,*.swo,*.swp,*.mp3,*.m4a,*.zip,*.rar,*.doc,*.docx,*.jpg,*.gif,*.pdf,*.torrent,Applications,Documents/creative,Documents/personal-misc,Documents/profession-misc/,Documents/transcriptions,*.xls,*.vcf,*.ai,*.indd,*.psd,*.tif,*.tiff,*.jpeg,*.ini,Downloads,Movies,Pictures,Dropbox,Music,Library,*.DS_Store,*.initalized
+set wildignore+=*.o,*.obj,.git,*.swo,*.swp,*.mp3,*.m4a,*.zip,*.rar,*.doc,*.docx,*.jpg,*.gif,*.pdf,*.torrent,Applications,Documents/creative,Documents/personal-misc,Documents/profession-misc/,Documents/transcriptions,*.xls,*.vcf,*.ai,*.indd,*.psd,*.tif,*.tiff,*.jpeg,*.ini,Downloads,Movies,Pictures,Dropbox,Music,Library,*.DS_Store,*.initalized,Documents/doa/doa/tmp/
+
+" Gitgutter
+highlight clear SignColumn " same appearance as your line number column
+let g:gitgutter_sign_column_always = 1 " always have a sign column
